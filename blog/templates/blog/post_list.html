@@ -1,0 +1,12 @@
+<div>
+    <h1><a href="/">A.C.T 동아리 부스 테트리스 게임 랭킹</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.user }}</a></h1>
+        <h2><a href="">{{ post.score }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
